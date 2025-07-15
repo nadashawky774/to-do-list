@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <style>
+
+       
+      body {
+        
+        padding: 20px;
+        background-color: bisque;
+        font-family: 'Arial', sans-serif;
+        direction: rtl;
+        text-align: center;
+      }
+
+      h1 {
+        color: rgb(184, 136, 64);
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: beige;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        
+      }
+
+      li {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 15px ;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        max-width: 500px;
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        gap:12px;
+        justify-content: space-between;
+        transition: background-color 0.3s ease;
+      }
+
+      li:hover {
+      transform: translateY(-2px); 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); 
+}
+
+      label{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        font-size: 1.1em;
+      }
+
+      input[type="checkbox"] {
+         accent-color:#4caf50;
+         width: 20px;
+         height:20px;
+         cursor: pointer;
+      }
+
+      input[type="checkbox"]:checked + span{
+        text-decoration: line-through;
+    
+      }
+
+      @media (max-width: 480px){
+        li{
+            font-size: 1em;
+            padding: 12px;
+            width: 95%;
+        }
+
+        h1{
+            font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <p>دي المهام اللي محتاج اخلصها النهارده</p>
+
+    <hr />
+
+    <p>🗓️ خطة اليوم:</p>
+
+    
+      <li>
+        <label><input type="checkbox"><span>⏰ أصحى من بدري</span></label>
+        </li>
+     <li>
+        <label><input type="checkbox"><span>📖 أذاكر HTML</span></label>
+    </li>
+      <li>
+        <label><input type="checkbox"><span>💪 أتمرن نص ساعة</span></label>
+        </li>
+      <li>
+        <label><input type="checkbox"><span>🧹 أنضف المكتب</span></label>
+    </li>
+      <li>
+        <label><input type="checkbox"><span>📚 أراجع اللي اتعلمته</span></label>
+        </li>
+    </ul>
+    <hr />
+  </body>
+</html>
